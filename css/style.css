@@ -1,0 +1,898 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background : rgba(27, 27, 27, 0.959);
+    color: #eaeaea;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/** ANIME SCROLL ***************************/
+
+.anime {
+    opacity: 0;
+    transform: translate3d(-100px,0,0);
+    transition: .3s;
+}
+.anime-start {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+
+}
+
+/** MENU RESPONSIVO! ***************************/
+
+/**
+label #btn, label #cancel {
+    flex: 0;
+    color: white;
+    font-size: 30px;
+    line-height: 49.5px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+
+/** MENU E INTRO ***************************/
+
+/**
+.menu {
+    position: fixed; top: 0px; left: 0px;
+    width: 100%;
+    background: rgb(26, 25, 25);
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.menu img{
+    flex: 1;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0px;
+}
+.menu ul {
+    flex: 1;
+    display: flex;
+    margin: 0px auto;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+.menu ul li {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    text-shadow: 1px 1px 1px black;
+    color: #1a1919;
+    margin-right: 5px;
+}
+.menu ul li a {
+    font-size: 18pt;
+    text-decoration: none;
+    color: #eaeaea;
+}
+.menu ul li a:hover {
+    text-decoration: underline;
+    font-size: 16pt;
+}
+**/
+
+
+.intro {
+padding-bottom: 30px;
+background: url("../img/fundoProg.jpg") no-repeat center center;
+background-size: cover;
+text-align: center;
+}
+.intro h1, h3{
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.intro h1 {
+    text-align: center;
+    padding: 100px 0 20px;
+    text-size: 50px;
+}
+.intro h3 {
+    text-align: center;
+    padding: 0 0 100px 0;
+}
+@media (max-width: 900px){
+    .intro h3 {
+        font-size: 11pt;
+    }
+}
+@media (max-width: 700px){
+    .intro h1 {
+        font-size: 20pt;
+        margin: 0 40px;
+    }
+    .intro h3 {
+        font-size: 9pt;
+        margin: 0 40px;
+    }
+}
+@media (max-width: 370px){
+    .menu ul li a{
+        font-size: 15pt;
+    }
+}
+@media (max-width: 325px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu ul li {
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+
+
+/** FOTO ***************************/
+.foto {
+    position: relative;
+    right: -40%;
+    top: -100px;
+    z-index: 2;
+    max-width: 200px;
+    margin: 0 auto;
+}
+.foto img{
+    max-width: 200px;
+    max-height: 200px;
+    -webkit-transition-duration: 0.3s;
+}
+/**
+.foto img:hover {
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+}**/
+
+@media (max-width: 1100px){
+    .foto {
+        right: -35%;
+        margin-bottom: 50px;
+    }
+    .foto img{
+        max-width: 170px;
+        max-height: 170px;
+    }
+}
+@media (max-width: 700px){
+    .foto {
+        right: -33%;
+        margin-bottom: 50px;
+    }
+    .foto img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+@media (max-width: 500px){
+    .foto {
+        right: auto;
+        top: -60px;
+        margin: 0 auto 100px;
+    }
+    .foto img{
+        max-width: 130px;
+        max-height: 130px;
+        left: 50%;
+        margin-left: 35px;
+    }
+}
+
+
+
+
+
+
+
+/** REDES SOCIAIS ***************************/
+
+.insta img {
+    position: fixed;
+    left: 0px;
+    top: 200px;
+    max-width: 40px;
+    max-height: 40px;
+    -webkit-transition-duration: 0.3s;
+    z-index: 90;
+}
+.insta img:hover {
+    -webkit-transform: scale(1.2);
+}
+
+.link img {
+    position: fixed;
+    left: 0px;
+    top: 250px;
+    max-width: 40px;
+    max-height: 40px;
+    -webkit-transition-duration: 0.3s;
+    z-index: 90;
+}
+.link img:hover {
+    -webkit-transform: scale(1.2);
+}
+
+.git img {
+    position: fixed;
+    left: 0px;
+    top: 300px;
+    max-width: 40px;
+    max-height: 40px;
+    -webkit-transition-duration: 0.3s;
+    z-index: 90;
+}
+.git img:hover {
+    -webkit-transform: scale(1.2);
+}
+
+@media (max-width: 767px){
+
+    .insta img {
+        max-width: 38px;
+        max-height: 38px;
+        top: 250px;
+    }
+    .link img {
+        max-width: 38px;
+        max-height: 38px;
+        top: 300px;
+    }
+    .git img {
+        max-width: 38px;
+        max-height: 38px;
+        top: 350px;
+    }
+}
+
+
+
+
+
+
+
+/** HOME ***************************/
+.home {
+    z-index: 50;
+    margin: 10px 0;
+}
+.home p {
+    margin: -150px auto 60px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 22px;
+}
+@media (max-width: 920px){
+    .home {
+        margin: 0 40px;
+    }
+    .home p {
+        font-size: 19px;
+        margin: -100px 65px 0;
+    }
+}
+@media (max-width: 700px){
+
+    .home p {
+        font-size: 17px;
+        margin: -100px 50px 0;
+    }
+}
+@media (max-width: 450px){
+    .home p {
+        font-size: 17px;
+        margin: -150px 10px 0;
+    }
+}
+
+
+
+
+
+
+
+/** PROJECT ***************************/
+
+.project h2 {
+    text-align: center;
+    margin: 180px auto 10px;
+    font-size: 35px;
+}
+.bt div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.bt div input{
+    flex: 1;
+    font-size: 18px;
+    background: rgb(26, 25, 25);
+    color: #eaeaea;
+    padding: 20px 0;
+    -webkit-transition-duration: 0.3s;
+}
+.bt div input:hover {
+    background: rgb(26, 25, 25);;
+    text-decoration: underline;
+    -webkit-transform: scale(1.05);
+    font-size: 20px;
+}
+@media (max-width: 1120px){
+    .bt  {
+        margin: 0 70px;
+    }
+}
+@media (max-width: 700px){
+    .bt  {
+        flex-direction: column;
+        margin: 0 70px;
+        align-items: center;
+        justfy-content: center;
+    }
+    .bt  input{
+        min-width: 163px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 300px){
+    .bt{
+        display: block;
+        min-width: 163px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/*************************** ALEDRETHUR MALHAS **/
+.ale {
+    display: none;
+}
+.ale h2 {
+    margin: 20px auto 10px;
+    background-color: #f50f07;
+    text-align: center;
+    font-size: 28px;
+}
+.ale p {
+    text-align: center;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.ale p a{
+    text-align: center;
+   
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+.ale p a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.aleimg {
+ display: flex;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+
+    align-items: top;
+}
+.aleimg img {
+    max-width: 520px;
+    margin: 20px 0px;
+    flex: 1;
+    -webkit-transition-duration: 0.3s;
+}
+.aleimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+@media (max-width: 400px){
+    .aleimg img {
+        max-width: 310px;
+    }
+}
+
+
+
+
+/*************************** CINEFILÓSOFO **/
+.cine {
+    display: none;
+}
+.cine h2 {
+    margin: 20px auto 10px;
+    background-color: #ff0000;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+}
+.cine p {
+    text-align: center;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.cine p a{
+    text-align: center;
+   
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+.cine p a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.cineimg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    align-items: top;
+}
+.cineimg img {
+    max-width: 520px;
+    margin: 20px 0px;
+    flex: 1;
+    -webkit-transition-duration: 0.3s;
+}
+.cineimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+.cineimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+@media (max-width: 400px){
+    .cineimg img {
+        max-width: 310px;
+    }
+}
+
+
+
+
+
+
+/*************************** 2 CENTAVOS DE LUTA **/
+.luta {
+    display: none;
+}
+.luta h2 {
+    margin: 20px auto 10px;
+    background-color: #a52a2a;
+    text-align: center;
+    font-size: 28px;
+}
+.luta p {
+    text-align: center;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.luta p a{
+    text-align: center;
+   
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+.luta p a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.lutaimg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    align-items: top;
+}
+.lutaimg img {
+    max-width: 520px;
+    margin: 20px 0px;
+    flex: 1;
+    -webkit-transition-duration: 0.3s;
+}
+.lutaimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+.lutaimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+@media (max-width: 400px){
+    .lutaimg img {
+        max-width: 310px;
+    }
+}
+
+
+
+
+
+/*************************** Casa Praia **/
+.bar {
+    display: none;
+}
+.bar h2 {
+    margin: 20px auto 10px;
+    background-color: #82a4b4;
+    text-align: center;
+    font-size: 28px;
+}
+.bar p {
+    text-align: center;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.bar p a{
+    text-align: center;
+   
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+.bar p a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.barimg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    align-items: top;
+}
+.barimg img {
+    max-width: 520px;
+    margin: 20px 0px;
+    flex: 1;
+    -webkit-transition-duration: 0.3s;
+}
+.barimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+.barimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+@media (max-width: 400px){
+    .barimg img {
+        max-width: 310px;
+    }
+}
+
+/*************************** Casa Praia **/
+.caravan {
+    display: none;
+}
+.caravan h2 {
+    margin: 20px auto 10px;
+    background-color: #000000;
+    text-align: center;
+    font-size: 28px;
+}
+.caravan p {
+    text-align: center;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.caravan p a{
+    text-align: center;
+   
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+.caravan p a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.caravanimg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    align-items: top;
+}
+.caravanimg img {
+    max-width: 520px;
+    margin: 20px 0px;
+    flex: 1;
+    -webkit-transition-duration: 0.3s;
+}
+.caravanimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+.caravanimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+@media (max-width: 400px){
+    .caravanimg img {
+        max-width: 310px;
+    }
+}
+
+
+
+
+/*************************** GOOGLE GLASS **/
+.glass {
+    display: none;
+}
+.glass h2 {
+    margin: 20px auto 10px;
+    background-color: #dddddd;
+    text-align: center;
+    font-size: 28px;
+    color: #606060;
+}
+.glass p {
+    text-align: center;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.glass p a{
+    text-align: center;
+   
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+.glass p a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.glassimg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    align-items: top;
+}
+.glassimg img {
+    max-width: 520px;
+    margin: 20px 0px;
+    flex: 1;
+    -webkit-transition-duration: 0.3s;
+}
+.glassimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+.glassimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+@media (max-width: 400px){
+    .glassimg img {
+        max-width: 310px;
+    }
+}
+
+
+
+
+/*************************** BRAFÉ **/
+.brafe {
+    display: none;
+}
+.brafe h2 {
+    margin: 20px auto 10px;
+    background-color: #252525;
+    text-align: center;
+    font-size: 28px;
+}
+.brafe p {
+    text-align: center;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.brafe p a{
+    text-align: center;
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+.brafe p a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.brafeimg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    align-items: top;
+}
+.brafeimg img {
+    max-width: 520px;
+    margin: 20px 0px;
+    flex: 1;
+    -webkit-transition-duration: 0.3s;
+}
+.brafeimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+.brafeimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+@media (max-width: 400px){
+    .brafeimg img {
+        max-width: 310px;
+    }
+}
+
+
+
+
+/*************************** ANIMAIS FANTÁSTICOS **/
+.ani {
+    display: none;
+}
+.ani h2 {
+    margin: 20px auto 10px;
+    background-color: #ffbb55;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+}
+.ani p {
+    text-align: center;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.ani p a{
+    text-align: center;
+   
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+.ani p a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.aniimg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; 
+    align-items: top;
+}
+.aniimg img {
+    max-width: 520px;
+    margin: 20px 0px;
+    flex: 1;
+    -webkit-transition-duration: 0.3s;
+}
+.aniimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+.aniimg img:hover {
+    -webkit-transform: scale(0.95);
+}
+@media (max-width: 400px){
+    .aniimg img {
+        max-width: 310px;
+    }
+}
+
+
+
+
+
+/** SKILLS ***************************/
+.skills {
+    margin-bottom: 50px;
+}
+.skills h2 {
+    text-align: center;
+    margin: 180px auto 40px;
+    font-size: 35px;
+}
+.skills1 p {
+    text-align: left;
+
+}
+.skills2 p {
+    text-align: left;
+}
+.skills-itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 50px;
+}
+.skills-itens div{
+    margin: 0 40px;
+}
+@media (max-width: 600px){
+    .skills-itens {
+        display: block;
+        margin: 0 20px;
+    }
+    .skills1 p {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto;
+        text-align: left;
+    
+    }
+    .skills2 p {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+
+
+
+
+/** CONTACTS ***************************/
+.cont {
+    margin: 30px 0 260px;
+}
+.cont h2{
+    text-align: center;
+    margin: 300px auto 40px;
+    font-size: 35px;
+}
+.cont p{
+    text-align: center;
+}
+@media (max-width: 1030px) {
+    .cont {
+        margin: 50px 0 260px;
+    }
+}
+
+
+
+/**Bootstrap**/
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@media (max-width: 1410px) {
+
+    .bg-dark {
+        background-color: rgb(26, 25, 25);
+    }
+}
