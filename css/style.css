@@ -757,14 +757,15 @@ text-align: center;
 
 
 
-/*************************** ANIMAIS FANTÁSTICOS **/
+/*************************** PWCT **/
 .ani {
     display: none;
 }
 .ani h2 {
     margin: 20px auto 10px;
-    background-color: #ffbb55;
-    color: black;
+    background-color: #4e98b1;
+    /* background-color: #ffbb55; */
+    color: #fff;
     text-align: center;
     font-size: 28px;
 }
